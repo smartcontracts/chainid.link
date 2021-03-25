@@ -1,6 +1,6 @@
 const preloads = {
   optimism: {
-    chainId: '0x0A',
+    chainId: '0xA',
     chainName: 'Optimistic Ethereum',
     nativeCurrency: {
       name: 'Ether',
