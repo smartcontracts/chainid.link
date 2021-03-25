@@ -46,6 +46,13 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    if (!window.ethereum) {
+      this.setState({
+        error: new Error('No Ethereum provider found.')
+      })
+      return
+    }
+
     try {
       const network = getQueryParam('network')
       const networkConfig = preloads[network]
@@ -64,9 +71,6 @@ class App extends React.Component {
     } catch {}
 
     try {
-      if (!window.ethereum) {
-        throw new Error('No Ethereum provider found.')
-      }
 
       const networkConfig = {
         chainId: '0x' + parseInt(getQueryParam('chainId'), 10).toString(16),
