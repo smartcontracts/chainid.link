@@ -1,4 +1,4 @@
-export default {
+const preloads = {
   optimism: {
     chainId: '0x0A',
     chainName: 'Optimistic Ethereum',
@@ -15,3 +15,5 @@ export default {
     ]
   },
 }
+
+export default preloads
