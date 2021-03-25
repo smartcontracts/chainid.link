@@ -114,11 +114,11 @@ class App extends React.Component {
                     <div className="pretty white inline-block margin-right shadow">{this.state.networkConfig.nativeCurrency.name} ({this.state.networkConfig.nativeCurrency.symbol})</div>
                 </div>
                 <div>
-                    <div className="pretty grey inline-block margin-right">Node URL:</div>
+                    <div className="pretty grey inline-block margin-right">Node:</div>
                     <div className="pretty white inline-block margin-right shadow">{this.state.networkConfig.rpcUrls[0]}</div>
                 </div>
                 <div>
-                    <div className="pretty grey inline-block margin-right">Block Explorer:</div>
+                    <div className="pretty grey inline-block margin-right">Explorer:</div>
                     <div className="pretty white inline-block margin-right shadow">{this.state.networkConfig.blockExplorerUrls[0]}</div>
                 </div>
               </div>
