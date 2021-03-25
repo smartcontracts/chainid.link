@@ -55,7 +55,7 @@ class App extends React.Component {
 
     try {
       const network = getQueryParam('network')
-      const networkConfig = preloads[network]
+      const networkConfig = preloads[network.toLowerCase()]
 
       if (!networkConfig) {
         this.setState({
