@@ -78,7 +78,7 @@ class App extends React.Component {
         nativeCurrency: {
           name: getQueryParam('currencyName'),
           symbol: getQueryParam('currencySymbol'),
-          decimals: getQueryParam('currencyDecimals')
+          decimals: parseInt(getQueryParam('currencyDecimals'), 10)
         },
         rpcUrls: [
           getQueryParam('rpcUrl')

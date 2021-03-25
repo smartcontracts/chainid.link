@@ -5,7 +5,7 @@ const preloads = {
     nativeCurrency: {
       name: 'Ether',
       symbol: 'ETH',
-      decimals: '18',
+      decimals: 18,
     },
     rpcUrls: [
       'https://mainnet.optimism.io'
