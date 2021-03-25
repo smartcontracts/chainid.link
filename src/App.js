@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css';
+import preloads from './preloads'
 
 const getQueryParam = (name) => {
   const url = new URL(window.location.href)
@@ -45,6 +46,23 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    try {
+      const network = getQueryParam('network')
+      const networkConfig = preloads[network]
+
+      if (!networkConfig) {
+        this.setState({
+          error: new Error(`Network does not exist: ${network}`)
+        })
+        return
+      }
+
+      this.setState({
+        networkConfig: preloads[network]
+      })
+      return
+    } catch {}
+
     try {
       if (!window.ethereum) {
         throw new Error('No Ethereum provider found.')
