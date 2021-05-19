@@ -14,6 +14,21 @@ const preloads = {
       'https://mainnet-l2-explorer.surge.sh/'
     ]
   },
+  'optimism-kovan': {
+    chainId: '0x45',
+    chainName: 'Optimistic Ethereum (Kovan)',
+    nativeCurrency: {
+      name: 'Ether',
+      symbol: 'ETH',
+      decimals: 18,
+    },
+    rpcUrls: [
+      'https://kovan.optimism.io'
+    ],
+    blockExplorerUrls: [
+      'https://kovan-l2-explorer.surge.sh/'
+    ]
+  },
   cheapeth: {
     chainId: '0x309',
     chainName: 'cheapETH',
