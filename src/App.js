@@ -18,7 +18,8 @@ class App extends React.Component {
     this.state = {
       error: null,
       networkConfig: null,
-      connected: false
+      connected: false,
+      provided: false,
     }
 
     this.connect = this.connect.bind(this)
@@ -46,11 +47,10 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    if (!window.ethereum) {
+    if (window.ethereum) {
       this.setState({
-        error: new Error('No Ethereum provider found.')
+        provided: true
       })
-      return
     }
 
     try {
@@ -133,7 +133,7 @@ class App extends React.Component {
                 <div className="pretty white shadow">{this.state.error.message}</div>
               </div>
             }
-            {!this.state.error &&
+            {this.state.provided && !this.state.error &&
               <div className="pretty green shadow pointer" onClick={this.connect}>
                 {this.state.connected
                   ? 'connected!'
