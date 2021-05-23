@@ -11,7 +11,7 @@ const preloads = {
       'https://mainnet.optimism.io'
     ],
     blockExplorerUrls: [
-      'https://mainnet-l2-explorer.surge.sh/'
+      'https://optimistic.etherscan.io'
     ]
   },
   'optimism-kovan': {
@@ -26,7 +26,7 @@ const preloads = {
       'https://kovan.optimism.io'
     ],
     blockExplorerUrls: [
-      'https://kovan-l2-explorer.surge.sh/'
+      'https://kovan-optimistic.etherscan.io'
     ]
   },
   cheapeth: {
