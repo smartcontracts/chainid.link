@@ -44,6 +44,36 @@ const preloads = {
       'https://explore.cheapswap.io/'
     ]
   },
+  polygon: {
+    chainId: '0x89',
+    chainName: 'Matic Network',
+      nativeCurrency: {
+      name: 'Matic',
+      symbol: 'MATIC',
+      decimals: 18,
+    },
+    rpcUrls: [
+      'https://rpc-mainnet.matic.network'
+    ],
+    blockExplorerUrls: [
+      'https://polygonscan.com'
+    ],
+  },
+  xdai: {
+    chainId: '0x64',
+    chainName: 'xDai',
+      nativeCurrency: {
+      name: 'xDai Token',
+      symbol: 'xDai',
+      decimals: 18,
+    },
+    rpcUrls: [
+      'https://rpc.xdaichain.com'
+    ],
+    blockExplorerUrls: [
+      'https://blockscout.com/xdai/mainnet'
+    ],
+  },
 }
 
 export default preloads
