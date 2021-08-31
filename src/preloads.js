@@ -74,6 +74,21 @@ const preloads = {
       'https://blockscout.com/xdai/mainnet'
     ],
   },
+  fantom: {
+    chainId: '0xfa',
+    chainName: 'Fantom Opera',
+    nativeCurrency: {
+      name: 'Fantom',
+      symbol: 'FTM',
+      decimals: 18,
+    },
+    rpcUrls: [
+      'https://rpc.ftm.tools'
+    ],
+    blockExplorerUrls: [
+      'https://ftmscan.com'
+    ],
+  },
 }
 
 export default preloads
