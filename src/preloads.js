@@ -1,7 +1,7 @@
 const preloads = {
   optimism: {
     chainId: '0xA',
-    chainName: 'Optimistic Ethereum',
+    chainName: 'Optimism',
     nativeCurrency: {
       name: 'Ether',
       symbol: 'ETH',
@@ -16,7 +16,7 @@ const preloads = {
   },
   'optimism-kovan': {
     chainId: '0x45',
-    chainName: 'Optimistic Ethereum (Kovan)',
+    chainName: 'Optimism Kovan (testnet)',
     nativeCurrency: {
       name: 'Ether',
       symbol: 'ETH',
