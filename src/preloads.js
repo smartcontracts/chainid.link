@@ -29,6 +29,36 @@ const preloads = {
       'https://kovan-optimistic.etherscan.io'
     ]
   },
+  'optimism-goerli': {
+    chainId: '420',
+    chainName: 'Optimism Goerli (testnet)',
+    nativeCurrency: {
+      name: 'Ether',
+      symbol: 'ETH',
+      decimals: 18,
+    },
+    rpcUrls: [
+      'https://goerli.optimism.io'
+    ],
+    blockExplorerUrls: [
+      'https://blockscout.com/optimism/goerli'
+    ]
+  },  
+  'goerli': {
+    chainId: '5',
+    chainName: 'Goerli (testnet)',
+    nativeCurrency: {
+      name: 'Ether',
+      symbol: 'ETH',
+      decimals: 18,
+    },
+    rpcUrls: [
+      'https://rpc.goerli.mudit.blog/'
+    ],
+    blockExplorerUrls: [
+      'https://goerli.etherscan.io/'
+    ]
+  },   
   cheapeth: {
     chainId: '0x309',
     chainName: 'cheapETH',
