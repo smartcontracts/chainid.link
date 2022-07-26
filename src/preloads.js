@@ -1,3 +1,5 @@
+// Note that chainId has to be specified in hex, it's interpreted as hex even if not preceeded by a 0x.
+
 const preloads = {
   optimism: {
     chainId: '0xA',
@@ -15,7 +17,7 @@ const preloads = {
     ]
   },
   'optimism-kovan': {
-    chainId: '0x45',
+    chainId: '0x45',   // 69
     chainName: 'Optimism Kovan (testnet)',
     nativeCurrency: {
       name: 'Ether',
@@ -30,7 +32,7 @@ const preloads = {
     ]
   },
   'optimism-goerli': {
-    chainId: '420',
+    chainId: '0x1a4',   // 420
     chainName: 'Optimism Goerli (testnet)',
     nativeCurrency: {
       name: 'Ether',
@@ -60,7 +62,7 @@ const preloads = {
     ]
   },   
   cheapeth: {
-    chainId: '0x309',
+    chainId: '0x309',   // 777
     chainName: 'cheapETH',
     nativeCurrency: {
       name: 'cheapETH',
@@ -75,7 +77,7 @@ const preloads = {
     ]
   },
   polygon: {
-    chainId: '0x89',
+    chainId: '0x89',    // 137
     chainName: 'Matic Network',
       nativeCurrency: {
       name: 'Matic',
@@ -90,7 +92,7 @@ const preloads = {
     ],
   },
   xdai: {
-    chainId: '0x64',
+    chainId: '0x64',    // 100
     chainName: 'xDai',
       nativeCurrency: {
       name: 'xDai Token',
