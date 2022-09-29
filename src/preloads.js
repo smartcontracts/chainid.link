@@ -43,7 +43,7 @@ const preloads = {
       'https://goerli.optimism.io'
     ],
     blockExplorerUrls: [
-      'https://blockscout.com/optimism/goerli'
+      'https://goerli-optimism.etherscan.io/'
     ]
   },  
   'goerli': {
