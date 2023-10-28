@@ -108,6 +108,7 @@ const preloads = {
   },
   'opstack-getting-started': {
     chainId: '0xA455', // 42069
+    chainName: 'OP Stack Getting Started',
     nativeCurrency: {
       name: 'Ether',
       symbol: 'ETH',
