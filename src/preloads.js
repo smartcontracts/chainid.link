@@ -106,6 +106,18 @@ const preloads = {
       'https://blockscout.com/xdai/mainnet'
     ],
   },
+  'opstack-getting-started': {
+    chainId: '0xA455', // 42069
+    nativeCurrency: {
+      name: 'Ether',
+      symbol: 'ETH',
+      decimals: 18,
+    },
+    rpcUrls: [
+      'http://localhost:8545'
+    ],
+    blockExplorerUrls: [],
+  },
 }
 
 export default preloads
