@@ -119,6 +119,36 @@ const preloads = {
     ],
     blockExplorerUrls: [],
   },
+  'holesky' {
+    chainId: '0x4268', // 17000
+    chainName: 'Holesky (testnet)',
+    nativeCurrency: {
+      name: 'Ether',
+      symbol: 'ETH',
+      decimals: 18,
+    },
+    rpcUrls: [
+      'https://rpc.holesky.ethpandaops.io'
+    ],
+    blockExplorerUrls: [
+        'https://eth-holesky.blockscout.com'
+    ],    
+  },  
+  'redstone-holesky' {
+    chainId: '0x4269', // 17001
+    chainName: 'Redstone Holesky (testnet)',
+    nativeCurrency: {
+      name: 'Ether',
+      symbol: 'ETH',
+      decimals: 18,
+    },
+    rpcUrls: [
+      'https://rpc.holesky.redstone.xyz'
+    ],
+    blockExplorerUrls: [
+        'https://explorer.holesky.redstone.xyz'
+    ],    
+  }
 }
 
 export default preloads
