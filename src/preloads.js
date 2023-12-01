@@ -119,6 +119,21 @@ const preloads = {
     ],
     blockExplorerUrls: [],
   },
+  'op-sepolia': {
+    chainId: '0xAA37DC', // 11155420
+    chainName: 'OP Sepolia',
+    nativeCurrency: {
+      name: 'Ether',
+      symbol: 'ETH',
+      decimals: 18,
+    },
+    rpcUrls: [
+      'https://sepolia.optimism.io'
+    ],
+    blockExplorerUrls: [
+      'https://sepolia-optimism.etherscan.io'
+    ]
+  },
 }
 
 export default preloads
